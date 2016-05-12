@@ -11,6 +11,6 @@
     <title>Welcome</title>
   </head>
   <body>
-  <jsp:forward page="/EmployeeController"></jsp:forward>
+  <jsp:forward page="/InfoSystem"></jsp:forward>
   </body>
 </html>
