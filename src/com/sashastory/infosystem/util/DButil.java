@@ -13,13 +13,10 @@ public class DButil {
 		if (connection != null) {
 			return connection;
 		}
-		String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe";
-		String user = "hr";
-		String pass = "oraclehr";
 		try {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		Locale.setDefault(Locale.ENGLISH);
-		connection = DriverManager.getConnection(jdbcUrl,user,pass);
+		connection = DriverManager.getConnection(StringUtil.jdbcUrl,StringUtil.user,StringUtil.pass);
 		} catch (Exception e){
 			e.printStackTrace();
 		}
@@ -35,9 +32,6 @@ public class DButil {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-	}
-
-	public static void main(String[] args) {
 	}
 
 }

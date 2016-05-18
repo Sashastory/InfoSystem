@@ -6,7 +6,7 @@ public class Employee {
 	private String fullName;
 	private String phoneNumber;
 	private String salary;
-	private int departmentId;
+	private String departmentId;
 
 	public int getEmployeeId() {
 		return employeeId;
@@ -32,10 +32,10 @@ public class Employee {
 	public void setSalary(String salary) {
 		this.salary = salary;
 	}
-	public int getDepartmentId() {
+	public String getDepartmentId() {
 		return departmentId;
 	}
-	public void setDepartmentId(int departmentId) {
+	public void setDepartmentId(String departmentId) {
 		this.departmentId = departmentId;
 	}
 	
